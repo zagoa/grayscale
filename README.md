@@ -1,5 +1,5 @@
 # Grayscale
-Grayscale is a quick settings tile that can toggle your screen between full color, and monochrome.
+Grayscale is a quick settings tile that can toggle your display between full color and grayscale.
 ![Demo](http://f.dtkav.com/grayscale/demo.gif)
 
 # Why this app?
