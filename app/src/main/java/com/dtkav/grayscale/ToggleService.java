@@ -1,4 +1,4 @@
-package com.fei_ke.greyscale;
+package com.dtkav.grayscale;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -24,7 +24,7 @@ public class ToggleService extends TileService {
             setState(Tile.STATE_ACTIVE);
         }
 
-        Util.toggleGreyscale(this, oldState == Tile.STATE_INACTIVE);
+        Util.toggleGrayscale(this, oldState == Tile.STATE_INACTIVE);
     }
 
 
@@ -37,7 +37,7 @@ public class ToggleService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
-        boolean greyscaleEnable = Util.isGreyscaleEnable(this);
-        setState(greyscaleEnable ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        boolean grayscaleEnable = Util.isGrayscaleEnable(this);
+        setState(grayscaleEnable ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
     }
 }

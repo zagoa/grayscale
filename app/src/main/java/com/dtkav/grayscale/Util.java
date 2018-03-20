@@ -1,4 +1,4 @@
-package com.fei_ke.greyscale;
+package com.dtkav.grayscale;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -43,7 +43,7 @@ public class Util {
                     public void onClick(DialogInterface dialog, int which) {
                         try {
                             Runtime.getRuntime().exec(SU_COMMAND).waitFor();
-                            toggleGreyscale(context, !isGreyscaleEnable(context));
+                            toggleGrayscale(context, !isGrayscaleEnable(context));
                         } catch (Exception e) {
                             Toast.makeText(context, R.string.root_failure, Toast.LENGTH_SHORT).show();
                             e.printStackTrace();
@@ -53,15 +53,15 @@ public class Util {
                 .create();
     }
 
-    public static boolean isGreyscaleEnable(Context context) {
+    public static boolean isGrayscaleEnable(Context context) {
         ContentResolver contentResolver = context.getContentResolver();
         return Secure.getInt(contentResolver, DISPLAY_DALTONIZER_ENABLED, 0) == 1
                 && Secure.getInt(contentResolver, DISPLAY_DALTONIZER, 0) == 0;
     }
 
-    public static void toggleGreyscale(Context context, boolean greyscale) {
+    public static void toggleGrayscale(Context context, boolean grayscale) {
         ContentResolver contentResolver = context.getContentResolver();
-        Secure.putInt(contentResolver, DISPLAY_DALTONIZER_ENABLED, greyscale ? 1 : 0);
-        Secure.putInt(contentResolver, DISPLAY_DALTONIZER, greyscale ? 0 : -1);
+        Secure.putInt(contentResolver, DISPLAY_DALTONIZER_ENABLED, grayscale ? 1 : 0);
+        Secure.putInt(contentResolver, DISPLAY_DALTONIZER, grayscale ? 0 : -1);
     }
 }

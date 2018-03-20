@@ -1,4 +1,4 @@
-package com.fei_ke.greyscale;
+package com.dtkav.grayscale;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -12,7 +12,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         if (Util.hasPermission(this)) {
-            Util.toggleGreyscale(this, !Util.isGreyscaleEnable(this));
+            Util.toggleGrayscale(this, !Util.isGrayscaleEnable(this));
             finish();
         } else {
             Dialog dialog = Util.createTipsDialog(this);

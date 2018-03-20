@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "com.fei_ke.greyscale"
+        applicationId "com.dtkav.grayscale"
         minSdkVersion 21
         targetSdkVersion 24
         versionCode 1
