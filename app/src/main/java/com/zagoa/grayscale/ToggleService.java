@@ -1,11 +1,11 @@
-package com.dtkav.grayscale;
+package com.zagoa.grayscale;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
-@TargetApi(Build.VERSION_CODES.N)
+@TargetApi(Build.VERSION_CODES.Q)
 public class ToggleService extends TileService {
 
     @Override

@@ -7,17 +7,6 @@ Normally this setting exists in
 `Settings -> System -> Developer Options -> Simulate color space -> Monochromacy`.
 This can be a pain to change quickly by hand! Grayscale is a quick settings tile that allows you to toggle this setting.
 
-# How to install
-1. install adb ([guide](https://www.xda-developers.com/install-adb-windows-macos-linux/))
-2. download [the app](http://f.dtkav.com/grayscale/grayscale-1.0.apk) (right click to save as..)
-3. install the app
-    ```
-    adb install grayscale-1.0.apk
-    ```
-4. grant secure settings permissions
-    ```
-    adb -d shell pm grant com.dtkav.grayscale android.permission.WRITE_SECURE_SETTINGS
-    ```
 
 # Additional Informaition
 ## App Permissions
@@ -34,7 +23,7 @@ If your phone is rooted, you can grant permissions directly on your phone.
 If you phone isn't rooted, then you need to use adb (Android Debug Bridge) to grant the app special permission.
 This can be done with the following command:
 ```
- adb -d shell pm grant com.dtkav.grayscale android.permission.WRITE_SECURE_SETTINGS
+ adb -d shell pm grant com.zagoa.grayscale android.permission.WRITE_SECURE_SETTINGS
 ```
 
 ## Manually setting your phone to grayscale (no app required)

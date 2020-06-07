@@ -1,4 +1,4 @@
-package com.dtkav.grayscale;
+package com.zagoa.grayscale;
 
 import android.app.Activity;
 import android.app.Dialog;
